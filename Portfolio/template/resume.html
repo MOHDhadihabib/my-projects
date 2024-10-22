@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block title %}Resume - Muhammad Hadi{% endblock %}
+
+{% block body_class %}resume-page{% endblock %}
+
+{% block body %}
+<main class="main">
+
+  <!-- Page Title -->
+  <div class="page-title" data-aos="fade">
+    <div class="heading">
+      <div class="container">
+        <div class="row d-flex justify-content-center text-center">
+          <div class="col-lg-8">
+            <h1>Resume</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="breadcrumbs">
+      <div class="container">
+        <ol>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li class="current">Resume</li>
+        </ol>
+      </div>
+    </nav>
+  </div><!-- End Page Title -->
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume section">
+    <div class="container">
+      <div class="row">
+        <h3 class="resume-title">Education</h3>
+        <div class="resume-item">
+          <h4>MATRICULATION</h4>
+          <h5><em>Montessori Complex High School</em></h5>
+          <p><em>2020 - 2021</em></p>
+          <p>Computer Science</p>
+        </div><!-- End Resume Item -->
+
+        <div class="resume-item">
+          <h4>INTERMEDIATE</h4>
+          <h5>Government Degree College Gulshan-e-Iqbal</h5>
+          <p><em>2022 - 2024</em></p>
+          <p>Pre-Engineering</p>
+        </div><!-- End Resume Item -->
+
+        <div class="resume-item">
+          <h4>SOFTWARE ENGINEERING</h4>
+          <h5>Aptech Gulshan 2</h5>
+          <p><em>2022 - PRESENT</em></p>
+          <p>Advanced Diploma In Software Engineering</p>
+        </div><!-- End Resume Item -->
+
+      </div>
+    </div>
+  </section><!-- /Resume Section -->
+
+</main>
+{% endblock %}
